@@ -1,0 +1,116 @@
+.hero {
+  width: 100%;
+  height: auto;
+  background: #141414;
+  margin-bottom: 200px;
+  background-image: url(../../images/headphone_hero_bg.png);
+  background-repeat: no-repeat;
+  background-position: 20px -100px;
+
+  .container {
+    padding: 128px 0px 158px 0px;
+      .hero__word {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        color: $white-color;
+        opacity: 0.5;
+        margin-bottom: 24px;
+      }
+      .hero__title {
+        width: 410px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 58px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $white-color;
+        margin-bottom: 24px;
+      }
+      .hero__text {
+        width: 320px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color: $white-color;
+        opacity: 0.75;
+        margin-bottom: 40px;
+      }
+      .hero__link {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $white-color;
+        text-decoration: none;
+        display: inline-block;
+        padding: 15px 29.5px 15px 31.5px;
+        background: #d87d4a;
+        transition-duration: 1s;
+      }
+      .hero__link:hover {
+        background: #fbaf85;
+        color: $white-color;
+      }
+    }
+  }
+
+
+@media only screen and (max-width: 767px){
+  .hero {
+    margin-bottom: 148px;
+    background-image: url(../../images/headphone_hero_tablet.png);
+    background-repeat: no-repeat;
+    // background-size: cover;
+    background-position: bottom;
+    // background-position: 20px -100px;
+  
+    .container {
+      padding: 126px 0px 167px 0px;
+        text-align: center;
+        .hero__title {
+          width: auto;
+        }
+        .hero__text {
+          display: block;
+          margin: 0 auto;
+          width: 349px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+}
+
+@media only screen and (max-width:375px){
+  .hero {
+    width: 100%;
+    height: auto;
+    margin-bottom: 92px;
+    background-image: url(../../images/headphone_hero_tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  
+    .container {
+      padding: 108px 0px 112px 0px;
+      text-align: center;
+        .hero__word {
+          margin-bottom: 16px;
+        }
+        .hero__title {
+          font-size: 36px;
+          line-height: 40px;
+          letter-spacing: 1.29px;
+          margin-bottom: 24px;
+        }
+        .hero__text {
+          width: 328px;
+          margin-bottom: 28px;
+        }
+      }
+    }
+}

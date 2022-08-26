@@ -1,0 +1,103 @@
+.audio {
+  width: 100%;
+  height: auto;
+  margin-bottom: 200px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .audio__left {
+      width: 445px;
+      margin-right: 125px;
+
+      &-title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 1.42857px;
+        text-transform: uppercase;
+        color: $text-color;
+        margin-bottom: 32px;
+        span {
+          color: $main-color;
+        }
+      }
+      &-text {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color: $text-color;
+        opacity: 0.5;
+      }
+    }
+    .audio-right {
+      background-image: url(../../images/audio_gear.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 540px;
+      height: 588px;
+      border-radius: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .audio {
+    margin-bottom: 96px;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .audio__left {
+        width: 573px;
+        order: 1;
+        text-align: center;
+        margin: 0 auto;
+
+      }
+      .audio-right {
+        order: -1;
+        background-image: url(../../images/audio_gear_tablet.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 689px;
+        height: 300px;
+        margin-bottom: 63px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .audio {
+    margin-bottom: 120px;
+    .container {
+      flex-wrap: wrap;
+
+      .audio__left {
+        width: 327px;
+        order: 1;
+        text-align: center;
+        margin: 0 auto;
+
+        &-title {
+          font-size: 28px;
+          line-height: 38px;
+          letter-spacing: 1px;
+        }
+      }
+      .audio-right {
+        order: -1;
+        background-image: url(../../images/audio_gear_mobile.png);
+        width: 327px;
+        height: 300px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
